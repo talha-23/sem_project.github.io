@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOILIO</title>
+    <link rel="icon" href="IMAGES/portfolio.png" alt="logo">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: cornsilk;
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 3px;
+        }
+         a:hover {
+            text-decoration: underline;
+            background-color: black;
+            padding:4px ;
+            border-radius: 4px;
+        }
+        .container {
+            padding: 2rem;
+        }
+        
+        .about, .projects, .skills, .contact {
+            display: block;
+            margin-bottom: 2rem;
+        }
+        .author {
+            height:200px;
+            width:140px;
+            border-radius: 70px;
+            margin-right: 5%;
+            margin-right: 3%;
+            float: right;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        @media(max-width:800px){
+            .form-inline input{
+                margin: 10px 0;
+            } .form-inline{
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+   <header>
+    <h1>MY PORTFOLIO</h1>
+    <ul>
+        <a href="#About">About</a>
+        <a href="#Projects">Projects</a>
+        <a href="Skills">Skills</a>
+        <a href="Contact">Contact</a>
+    </ul>
+   </header>
+   <div class="container">
+    <section id="About" class="About">
+        <h2><u>INTRODUCTION:-</u></h2>
+        <img src="IMAGES/IMG-20241007-WA0082.jpg" alt="Picture of author"  class="author">
+        <P>My name is Muhammad Talha, and I am currently pursuing a Bachelor of Science in Computer Science at AIR 
+        University, Islamabad. I have a deep passion for innovation and a strong drive to learn and implement 
+        cutting-edge ideas. Constantly exploring new frontiers in technology, I am dedicated to turning creative 
+        concepts into impactful solutions.</P>
+        
+    </section><hr>
+
+    <section id="Skills" class="Skills">
+        <h2><u>SKILLS</u></h2>
+        <ul>
+            <dt><b>Programming and Problem-Solving</b></dt>
+            <dd>Proficient in programming languages like Python, Java, or C++. Skilled in analyzing complex problems
+                 and developing efficient, logical solutions through coding.</dd>
+            <dt><b>Web Development</b></dt>
+            <dd>Experienced in building responsive and user-friendly websites using HTML, CSS, and JavaScript.
+                 Familiar with frameworks like Bootstrap or React for dynamic interfaces.</dd>
+            <dt><b>Data Structures and Algorithms</b></dt>
+            <dd>Strong understanding of core concepts like arrays, linked lists, trees, and graph algorithms. 
+                Capable of optimizing code for performance and scalability.</dd>
+
+        </ul>
+    </section><hr>
+    
+    <section id="Projects" class="Project">
+        <h2><u>PROJECTS</u></h2>
+        <h3>PROJECT#1</h3>
+        <dt><b>Personal Portfolio Website:</b></dt>
+        <dd>A responsive portfolio website to showcase your skills, projects, and contact information. Built using HTML
+            ,CSS, it demonstrates your ability to create functional and visually appealing websites.</dd>
+            <img src="" alt="Picture of project 1">
+        <h3>PROJECT#2</h3>
+        <dt><b>Library Management System:</b></dt>
+        <dd> basic application to manage library operations like book cataloging, borrowing, and returning. Developed
+             using Python and a simple database like SQLite, it highlights your understanding of database management and 
+             application development</dd>
+             <img src="" alt="Picture of project 2">
+
+    </section><hr>
+
+    <section id="Contact" class="Contact">
+        <h2><u>CONTACT</u></h2>
+        <p>Feel easy to contact at example#gmail.com or leave a message below:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name " id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter you email" id="email" name="email" ><br><br>
+
+            <label for="message">Message:</label>
+            <input type="text" placeholder="enter your messsage " id="message"><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section><hr>
+   </div>
+   <footer>
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+    
+</body>
+</html>
